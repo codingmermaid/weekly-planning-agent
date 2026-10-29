@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planner-agent"
+version = "0.1.0"
+description = "Single-agent weekly planning and scheduling assistant"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "tzdata",            # IANA timezones on Windows
+    "python-dotenv>=1.0",
+    "google-genai>=1.0",
+    "langgraph>=0.6",
+    "langgraph-checkpoint-sqlite>=2.0",
+    "streamlit>=1.40",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

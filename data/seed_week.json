@@ -1,0 +1,34 @@
+{
+  "window": {"start": "2026-11-02", "end": "2026-11-08"},
+  "preferences": {
+    "timezone": "Europe/London",
+    "day_start": "09:00",
+    "day_end": "21:00",
+    "buffer_minutes": 10,
+    "max_deep_minutes_per_day": 360,
+    "one_workout_per_day": true
+  },
+  "events": [
+    {"id": "ev-standup-mon", "title": "Team standup", "start": "2026-11-02T10:00:00+00:00", "end": "2026-11-02T11:00:00+00:00"},
+    {"id": "ev-dentist", "title": "Dentist", "start": "2026-11-02T14:00:00+00:00", "end": "2026-11-02T15:30:00+00:00"},
+    {"id": "ev-standup-tue", "title": "Team standup", "start": "2026-11-03T10:00:00+00:00", "end": "2026-11-03T11:00:00+00:00"},
+    {"id": "ev-lunch-sam", "title": "Lunch with Sam", "start": "2026-11-03T12:30:00+00:00", "end": "2026-11-03T13:30:00+00:00"},
+    {"id": "ev-standup-wed", "title": "Team standup", "start": "2026-11-04T10:00:00+00:00", "end": "2026-11-04T11:00:00+00:00"},
+    {"id": "ev-client-a-review", "title": "Client A review call", "start": "2026-11-04T16:00:00+00:00", "end": "2026-11-04T17:00:00+00:00"},
+    {"id": "ev-standup-thu", "title": "Team standup", "start": "2026-11-05T10:00:00+00:00", "end": "2026-11-05T11:00:00+00:00"},
+    {"id": "ev-family-dinner", "title": "Family dinner", "start": "2026-11-05T18:30:00+00:00", "end": "2026-11-05T20:00:00+00:00"},
+    {"id": "ev-exam", "title": "Statistics exam", "start": "2026-11-06T09:00:00+00:00", "end": "2026-11-06T12:00:00+00:00"},
+    {"id": "ev-football", "title": "Football match", "start": "2026-11-07T11:00:00+00:00", "end": "2026-11-07T13:00:00+00:00"}
+  ],
+  "tasks": [
+    {"id": "exam", "title": "Study for statistics exam", "kind": "deep", "estimate_minutes": 480,
+     "deadline": "2026-11-06T09:00:00+00:00", "priority": 1},
+    {"id": "client-a", "title": "Client A: landing page redesign", "kind": "deep", "estimate_minutes": 360,
+     "deadline": "2026-11-04T16:00:00+00:00", "priority": 1},
+    {"id": "client-b", "title": "Client B: quarterly report", "kind": "deep", "estimate_minutes": 240,
+     "deadline": "2026-11-05T18:00:00+00:00", "priority": 2},
+    {"id": "workouts", "title": "Workout", "kind": "workout", "estimate_minutes": 180,
+     "min_session_minutes": 60, "max_session_minutes": 60, "max_sessions_per_day": 1, "priority": 2},
+    {"id": "inbox", "title": "Clear email backlog", "kind": "admin", "priority": 3}
+  ]
+}
